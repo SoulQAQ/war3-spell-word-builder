@@ -1,0 +1,26 @@
+app:
+  name: war3技能文本生成器
+  version: 1.0.0
+  language: en-US
+window:
+  width: 1100
+  height: 720
+  minimum_width: 900
+  minimum_height: 600
+  remember_geometry: true
+  geometry: 01d9d0cb00030000000000ea0000006e000005350000033d000000ea0000006e000005350000033d000000000000000005a0000000ea0000006e000005350000033d
+  state: ''
+network:
+  timeout: 30
+  retry_count: 2
+  default_url: https://httpbin.org/get
+user_settings:
+  input_path: ./rundata/input
+  output_path: ./rundata/output
+features:
+  enable_logs: true
+  enable_status_bar: true
+  enable_modern_style: true
+ui:
+  theme: light
+  accent_color: '#4F8CFF'

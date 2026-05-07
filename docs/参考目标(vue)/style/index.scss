@@ -1,0 +1,82 @@
+@import "transition";
+@import "element-ui";
+
+* {
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+}
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+  Microsoft YaHei, Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+// main-container global css
+.app-container {
+  position: relative;
+  padding: 20px;
+}
+
+// table-operate-container global css
+.table-operate-container {
+  margin-top: 20px;
+}
+
+// table-container global css
+.table-container {
+  margin-top: 20px;
+}
+
+// webkit内核滚动条优化（Chrome 和 Safari 浏览器）
+*:hover::-webkit-scrollbar {
+  display: block;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  /*滚动条整体样式*/
+  width: 10px; /*高宽分别对应横竖滚动条的尺寸*/
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 8px;
+  background-color: rgba(144, 147, 153, 0.5);
+  -webkit-transition: 0.3s background-color;
+  transition: 0.3s background-color;
+}
+
+::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  /* -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background-color: rgba(144,147,153,.3); */
+}
+
+/* 火狐美化滚动条 */
+* {
+
+  scrollbar-color: #c8d2e0 #f3f4f9;
+  /* 滑块颜色  滚动条背景颜色 */
+  scrollbar-width: thin;
+  /* 滚动条宽度有三种：thin、auto、none */
+}

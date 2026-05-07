@@ -1,0 +1,21 @@
+
+a {
+  color: #b79500;
+}
+
+a:hover {
+  animation-name: aHover;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aHover {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
